@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NOIR BARBER, l'art de la coupe et de la précision. Découvrez nos prestations et demandez votre rendez-vous.">
+<title>NOIR BARBER — L'art de la précision</title>
+<style>
+:root{
+  --bg:#10100f;
+  --panel:#1d1d1b;
+  --gold:#d8b57b;
+  --cream:#f5f0e8;
+  --muted:#aaa69f;
+  --line:#39352e;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--cream);
+  line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,90%);margin:auto}
+header{
+  position:sticky;top:0;z-index:20;
+  background:#10100ff5;
+  border-bottom:1px solid var(--line);
+}
+nav{
+  display:flex;justify-content:space-between;
+  align-items:center;gap:20px;padding:22px 0;
+}
+.logo{
+  font-weight:900;font-size:24px;
+  letter-spacing:2px;
+}
+.logo span,.gold{color:var(--gold)}
+.links{display:flex;gap:25px;font-size:13px}
+.links a:hover{color:var(--gold)}
+.hero{
+  min-height:82vh;
+  display:flex;align-items:center;
+  background:
+    linear-gradient(90deg,#10100ff5,#10100fb0),
+    radial-gradient(circle at 85% 40%,#6e4f2b,transparent 55%);
+}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:bold;
+}
+h1{
+  font-size:clamp(48px,8vw,105px);
+  line-height:1.02;
+  letter-spacing:-3px;
+  margin:20px 0;
+}
+h2{
+  font-size:clamp(32px,5vw,52px);
+  line-height:1.15;
+  margin:15px 0 25px;
+}
+h3{font-size:22px;margin:0 0 12px}
+p{color:var(--muted)}
+.hero p{font-size:19px;max-width:550px}
+.btn{
+  display:inline-block;
+  background:var(--gold);
+  color:#16120d;
+  padding:15px 26px;
+  border-radius:3px;
+  font-weight:800;
+  margin-top:22px;
+  transition:.2s;
+}
+.btn:hover{background:#f0d19c;transform:translateY(-2px)}
+.btn.outline{
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold);
+}
+section{padding:90px 0}
+.alt{background:#171715}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.card{
+  padding:32px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:5px;
+  transition:.25s;
+}
+.card:hover{
+  border-color:var(--gold);
+  transform:translateY(-4px);
+}
+.price{
+  font-size:30px;
+  font-weight:900;
+  color:var(--gold);
+  margin-top:25px;
+}
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+.divider{
+  width:65px;height:2px;
+  background:var(--gold);
+  margin:25px 0;
+}
+.feature{
+  border-bottom:1px solid var(--line);
+  padding:17px 0;
+  color:var(--cream);
+}
+.formbox{
+  background:#24221f;
+  border:1px solid #534734;
+  padding:24px;
+  border-radius:6px;
+}
+.formbox iframe{
+  display:block;
+  width:100%;
+  height:950px;
+  border:0;
+  background:white;
+  border-radius:4px;
+}
+.note{font-size:12px}
+.cta{text-align:center}
+footer{
+  border-top:1px solid var(--line);
+  padding:35px 0;
+  color:var(--muted);
+  text-align:center;
+  font-size:13px;
+}
+@media(max-width:750px){
+  nav{flex-direction:column;gap:12px}
+  .links{gap:16px;font-size:12px;flex-wrap:wrap;justify-content:center}
+  .grid,.split{grid-template-columns:1fr}
+  section{padding:65px 0}
+  h1{letter-spacing:-2px}
+  .hero{min-height:75vh}
+  .formbox{padding:12px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="container">
+ <a href="#accueil" class="logo">NOIR <span>BARBER.</span></a>
+ <div class="links">
+  <a href="#apropos">Le salon</a>
+  <a href="#services">Prestations</a>
+  <a href="#experience">Expérience</a>
+  <a href="#reservation">Réserver</a>
+ </div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="accueil">
+ <div class="container">
+  <div class="eyebrow">L'art de la précision</div>
+  <h1>LE STYLE.<br><span class="gold">LA PRÉCISION.</span></h1>
+  <p>Une coupe, une signature. Découvrez une expérience de barbering où chaque détail compte.</p>
+  <a href="#reservation" class="btn">Prendre rendez-vous →</a>
+  <a href="#services" class="btn outline">Nos prestations</a>
+ </div>
+</section>
+
+<section id="apropos">
+ <div class="container split">
+  <div>
+   <div class="eyebrow">Notre philosophie</div>
+   <h2>Plus qu'une coupe.<br><span class="gold">Une identité.</span></h2>
+   <div class="divider"></div>
+   <p>Chez NOIR BARBER, chaque détail fait la différence.</p>
+   <p>Notre vision du barbering associe précision, élégance et modernité. Chaque prestation est pensée pour mettre en valeur votre style.</p>
+   <p>Classique, dégradé ou coupe tendance : votre personnalité est au centre de notre approche.</p>
+  </div>
+  <div class="card">
+   <div class="eyebrow">Notre signature</div>
+   <h3>L'exigence du détail.</h3>
+   <div class="feature">✦ Une approche personnalisée</div>
+   <div class="feature">✦ Des finitions soignées</div>
+   <div class="feature">✦ Une expérience moderne</div>
+   <div class="feature">✦ Un style qui vous ressemble</div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="services">
+ <div class="container">
+  <div class="eyebrow">Nos services</div>
+  <h2>Nos prestations.</h2>
+  <p>Choisissez la prestation adaptée à votre style.</p>
+
+  <div class="grid">
+   <article class="card">
+    <div class="eyebrow">01 / Coupe</div>
+    <h3>Coupe Signature</h3>
+    <p>Une coupe adaptée à votre visage et à vos envies, avec des finitions précises.</p>
+    <div class="price">25 €</div>
+   </article>
+
+   <article class="card">
+    <div class="eyebrow">02 / Barbe</div>
+    <h3>Barbe & Contours</h3>
+    <p>Entretien de la barbe, taille et contours pour un résultat net.</p>
+    <div class="price">15 €</div>
+   </article>
+
+   <article class="card">
+    <div class="eyebrow">03 / Complet</div>
+    <h3>Pack Signature</h3>
+    <p>Une coupe signature accompagnée d'un entretien complet de la barbe.</p>
+    <div class="price">35 €</div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="container split">
+  <div class="card">
+   <div class="eyebrow">NOIR BARBER</div>
+   <h2>Votre style.<br><span class="gold">Notre savoir-faire.</span></h2>
+   <p>Un univers sobre, élégant et contemporain, conçu autour de la précision et du soin.</p>
+  </div>
+  <div>
+   <div class="eyebrow">L'expérience</div>
+   <h2>Chaque détail compte.</h2>
+   <p>Prendre soin de son style, c'est aussi prendre du temps pour soi.</p>
+   <p>NOIR BARBER place la qualité de la prestation et l'attention portée au client au cœur de son identité.</p>
+   <a class="btn" href="#reservation">Réserver une prestation →</a>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="reservation">
+ <div class="container">
+  <div class="eyebrow">Réservation</div>
+  <h2>Votre prochain style<br><span class="gold">commence ici.</span></h2>
+  <p>Envoyez votre demande de rendez-vous. Le créneau sera confirmé après vérification des disponibilités.</p>
+
+  
+  <div class="formbox">
+    <h3>Réservez votre coupe</h3>
+    <p>
+      Consultez les disponibilités et choisissez
+      votre créneau de 45 minutes.
+    </p>
+
+    <a
+      class="btn"
+      href="https://script.google.com/macros/s/AKfycbzCFDpUqatmDtps1AwL8cWzghjJgQywYX6q3kCpoZ-Q263IDKZdci8F0QAE2B45OfCUvA/exec"
+      target="_blank"
+      rel="noopener noreferrer">
+      Voir les disponibilités →
+    </a>
+  </div>
+
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="eyebrow">NOIR BARBER</div>
+  <h2>Affirmez votre style.</h2>
+  <p>Une coupe soignée commence par un rendez-vous.</p>
+  <a class="btn" href="#reservation">Prendre rendez-vous →</a>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="container">
+  <strong>NOIR <span class="gold">BARBER.</span></strong>
+  <p>© 2026 NOIR BARBER — Tous droits réservés.</p>
+ </div>
+</footer>
+
+</body>
+</html>
